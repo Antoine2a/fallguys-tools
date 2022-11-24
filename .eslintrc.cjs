@@ -9,7 +9,7 @@ module.exports = {
         'airbnb/hooks',
         'plugin:react/recommended',
         'plugin:@typescript-eslint/recommended',
-        'prettier'
+        'plugin:prettier/recommended', // must be the last line to avoid prettier conflicts with others libs
     ],
     overrides: [
     ],
@@ -22,6 +22,9 @@ module.exports = {
     plugins: [
         'react',
         '@typescript-eslint',
+        'prettier',
     ],
-    rules: {},
+    rules: {
+        'react/react-in-jsx-scope': 0
+    },
 };
