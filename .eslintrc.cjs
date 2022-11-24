@@ -11,20 +11,21 @@ module.exports = {
         'plugin:@typescript-eslint/recommended',
         'plugin:prettier/recommended', // must be the last line to avoid prettier conflicts with others libs
     ],
-    overrides: [
-    ],
+    overrides: [],
     parser: '@typescript-eslint/parser',
     parserOptions: {
         ecmaVersion: 'latest',
         sourceType: 'module',
         project: './tsconfig.json',
     },
-    plugins: [
-        'react',
-        '@typescript-eslint',
-        'prettier',
-    ],
+    plugins: ['react', '@typescript-eslint', 'prettier'],
     rules: {
-        'react/react-in-jsx-scope': 0
+        'react/react-in-jsx-scope': 0,
+        'prettier/prettier': [
+            'error',
+            {
+                endOfLine: 'auto',
+            },
+        ],
     },
 };
