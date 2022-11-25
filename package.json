@@ -1,6 +1,7 @@
 {
     "name": "fallguys-tools",
     "homepage": "https://Antoine2a.github.io/fallguys-tools/#",
+    "private": true,
     "version": "0.0.1",
     "type": "module",
     "scripts": {
