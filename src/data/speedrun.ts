@@ -1,2 +1,4 @@
 // eslint-disable-next-line import/prefer-default-export
 export const speedrun = [];
+
+export default speedrun;
