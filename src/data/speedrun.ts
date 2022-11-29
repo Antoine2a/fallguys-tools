@@ -137,8 +137,10 @@ const hunts: Tround[] = [
 // Youtube 2 , eouardo75_015, big fans : https://youtu.be/X9_RCYrahs0 47.96
 // streamable : 123JLaney123 PartyPromenade(Glitchless) https://streamable.com/3f4v0j 52.49
 // reddit : fruit chute : 7.47s, https://reddit.com/r/FallGuysGame/comments/ilsinx/how_to_win_fruit_chute/
-// Bilibili : Bigs Fans Glitchless: 47.89 https://www.bilibili.com/video/BV1RG411mW by "海神星球"
+// Bilibili : Bigs Fans Glitchless: 47.89 https://www.bilibili.com/video/BV1RG411g7mW by "海神星球"
 // Twitch clip : L7L7, Slime Climb (Glitchless): 27.95 https://www.twitch.tv/l7l7/clip/StrangeBlindingWitchHeyGuys-BuPDHJU-p_edlnPX
+
+// blob:https://player.twitch.tv/b8109be6-43cd-4639-89d1-bf4d107d8e65
 // ==================
 
 const survivals: Tround[] = [];
