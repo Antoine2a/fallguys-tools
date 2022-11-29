@@ -1,2 +1,2 @@
 export { default as footerData } from './footer';
-export { default as spedrunData } from './speedrun';
+export { default as speedrunData } from './speedrun';

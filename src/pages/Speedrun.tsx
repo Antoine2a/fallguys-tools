@@ -1,4 +1,5 @@
 import React from 'react';
+import VideoPanel from '../components/speedrun/VideoPanel';
 
 function Speedrun() {
     return (
@@ -8,6 +9,7 @@ function Speedrun() {
                 <h2>
                     WIP - UNDER PROGRESS - PRIORITY: <strong>1</strong> (1 higher priority, 10 minor priority)
                 </h2>
+                <VideoPanel />
             </div>
         </div>
     );
