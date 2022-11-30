@@ -50,46 +50,46 @@ function VideoPanel() {
             </div>
             {/* the card */}
             {/* Twitter */}
-            {/* <div className="flex flex-col w-[45%] lg:w-[80%] bg-white rounded-lg shadow-md m-6 overflow-hidden sm:w-52">
+            <div className="flex flex-col w-[45%] lg:w-[80%] bg-white rounded-lg shadow-md m-6 overflow-hidden sm:w-52">
                 <div className="flex justify-center">
                     <TwitterVideoEmbed id="1593905159855382528" />
                 </div>
                 <h2 className="text-center px-2 pb-5">Display Twitter</h2>
                 <p className="bg-blue-500 text-white p-3 text-center hover:bg-blue-800 transition-all duration-500">Know More</p>
-            </div> */}
+            </div>
             {/* the card */}
             {/* YOUTUBE */}
-            {/* <div className="flex flex-col w-[45%] lg:w-[80%]  aspect-video bg-white rounded-lg shadow-md m-6 overflow-hidden sm:w-52">
+            <div className="flex flex-col w-[45%] lg:w-[80%]  aspect-video bg-white rounded-lg shadow-md m-6 overflow-hidden sm:w-52">
                 <ResponsivePlayer url="https://youtu.be/KY_QdbFl52Q" />
 
                 <h2 className="text-center px-2 pb-5">Display YT</h2>
                 <p className="bg-blue-500 text-white p-3 text-center hover:bg-blue-800 transition-all duration-500">Know More</p>
-            </div> */}
+            </div>
             {/* the card */}
 
             {/* the card */}
             {/* TIKTOK */}
-            {/* <div className="flex flex-col w-[45%] lg:w-[80%]  bg-white rounded-lg shadow-md m-6 overflow-hidden sm:w-52">
+            <div className="flex flex-col w-[45%] lg:w-[80%]  bg-white rounded-lg shadow-md m-6 overflow-hidden sm:w-52">
                 <TikTok url="https://www.tiktok.com/@scout2015/video/6718335390845095173" />
                 <h2 className="text-center px-2 pb-5">Display YT</h2>
                 <p className="bg-blue-500 text-white p-3 text-center hover:bg-blue-800 transition-all duration-500">Know More</p>
-            </div> */}
+            </div>
 
             {/* the card */}
             {/* Reddit */}
-            {/* <div className="flex flex-col w-[45%] lg:w-[80%]  bg-white rounded-lg shadow-md m-6 overflow-hidden sm:w-52">
+            <div className="flex flex-col w-[45%] lg:w-[80%]  bg-white rounded-lg shadow-md m-6 overflow-hidden sm:w-52">
                 <RedditEmbed url="https://youtu.be/KY_QdbFl52Q" />
                 <h2 className="text-center px-2 pb-5">Display Reddit</h2>
                 <p className="bg-blue-500 text-white p-3 text-center hover:bg-blue-800 transition-all duration-500">Know More</p>
-            </div> */}
+            </div>
 
             {/* the card */}
             {/* Bilibili */}
-            {/* <div className="flex flex-col w-[45%] lg:w-[80%]  bg-white rounded-lg shadow-md m-6 overflow-hidden sm:w-52">
+            <div className="flex flex-col w-[45%] lg:w-[80%]  bg-white rounded-lg shadow-md m-6 overflow-hidden sm:w-52">
                 <BilibiliEmbedRenderer aid="3787944" />
                 <h2 className="text-center px-2 pb-5">Display Bilibili</h2>
                 <p className="bg-blue-500 text-white p-3 text-center hover:bg-blue-800 transition-all duration-500">Know More</p>
-            </div> */}
+            </div>
         </div>
     );
 }
