@@ -31,7 +31,7 @@ function Navbar() {
         <header className={`${classes.navDefault} ${navState && classes.navSticky}`}>
             <nav className={StyleUtils.classNames('flex items-center justify-between', classes.navContainer)}>
                 <NavLink to="/" className="flex items-center">
-                    <h1>FGTools</h1>
+                    <h1 className="font-fallGuys">FGTools</h1>
                 </NavLink>
                 <ul className="flex items-center gap-7">
                     <li>

@@ -69,6 +69,7 @@ type TspeedrunRecord = {
     mediaType: MediaEnum;
     url2?: string;
     mediaType2?: string;
+    date?: Date;
 };
 
 // =========
@@ -93,6 +94,7 @@ const races: Tround[] = [
                         time: Duration.fromObject({ seconds: 47, milliseconds: 89 }),
                         url: 'https://www.bilibili.com/video/BV1RG411g7mW',
                         mediaType: MediaEnum.Bilibili,
+                        // date: ''
                     },
                     {
                         recordType: RecordEnum.FR,
@@ -131,7 +133,8 @@ const hunts: Tround[] = [
 ];
 
 // ==================
-// TWITTER, hoopsie Legends 10.21s FR xFantsu : https://twitter.com/xFantsu/status/159305159855382528
+// https://www.tiktok.com/@scout2015/video/6718335390845095173
+// TWITTER, hoopsie Legends 10.21s FR xFantsu : https://twitter.com/xFantsu/status/1593905159855382528
 // Youtube 1, xFantsu, Bounce Party 36.26s, url : https://www.youtube.com/watch?v=34LsNLeBhxY
 // TikTok , pixelPainters Sayyto, MissMusti, KennyShield_, Fougereシ,  https://www.tiktok.com/@fougere____/video/7157338215681199365?
 // Youtube 2 , eouardo75_015, big fans : https://youtu.be/X9_RCYrahs0 47.96

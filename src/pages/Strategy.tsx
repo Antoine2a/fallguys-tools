@@ -8,6 +8,11 @@ function Strategy() {
                 <h2>
                     WIP - UNDER PROGRESS - PRIORITY: <strong>7</strong> (1 higher priority, 10 minor priority)
                 </h2>
+                <ul>
+                    <li>fast start</li>
+                    <li>dive cancelling (and 360 dive boost)</li>
+                    <li>coyote jump</li>
+                </ul>
             </div>
         </div>
     );

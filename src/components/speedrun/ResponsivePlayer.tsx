@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import ReactPlayer from 'react-player';
 import { StyleUtils } from '../../utils';
 
+// //TODO npm i react-twitch-embed
+
 const classes: StyleUtils.TcssClasses = {
     // playerWrapper: 'relative pt-60', // pt-[56.25%] Player ratio: 100/ (1280 / 720)
     // reactPlayer: 'absolute top-0 left-0',
@@ -23,12 +25,17 @@ const classes: StyleUtils.TcssClasses = {
 // react-player : YT & Streamble ok
 // ==================
 
-function ResponsivePlayer() {
-    const [url, setUrl] = useState('https://www.twitch.tv/videos/1652722458');
+type ResponsivePlayerProps = {
+    url: string;
+};
 
+function ResponsivePlayer({ url }: ResponsivePlayerProps) {
     return (
-        <div className={classes.playerWrapper}>
-            <ReactPlayer className={classes.reactPlayer} url={url} width="100%" height="100%" controls />
+        // <div className={classes.playerWrapper}>
+        //     <ReactPlayer className={classes.reactPlayer} url={url} width="100%" height="100%" controls />
+        // </div>
+        <div className="h-full w-full px-5">
+            <ReactPlayer url={url} width="100%" height="100%" controls />
         </div>
     );
 }
