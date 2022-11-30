@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { TwitchClip } from 'react-twitch-embed';
 import { TikTok } from 'react-tiktok';
-import { TwitterVideoEmbed } from 'react-twitter-embed';
+// import { TwitterVideoEmbed } from 'react-twitter-embed';
 import BilibiliEmbedRenderer from 'react-bilibili-embed-renderer';
 import ResponsivePlayer from './ResponsivePlayer';
 import img1 from '../../assets/images/img1.webp';
@@ -50,13 +50,14 @@ function VideoPanel() {
             </div>
             {/* the card */}
             {/* Twitter */}
-            <div className="flex flex-col w-[45%] lg:w-[80%] bg-white rounded-lg shadow-md m-6 overflow-hidden sm:w-52">
+            {/* BROKE BECAUSE OF THE LIB NOT IN ES6 //TODO CREATE MY OWN COMPONENT : https://github.com/saurabhnemade/react-twitter-embed/issues/105 */}
+            {/* <div className="flex flex-col w-[45%] lg:w-[80%] bg-white rounded-lg shadow-md m-6 overflow-hidden sm:w-52">
                 <div className="flex justify-center">
-                    <TwitterVideoEmbed id="1593905159855382528" />
+                    <TwitterVideoEmbed id="1593905159855382528" /> 
                 </div>
                 <h2 className="text-center px-2 pb-5">Display Twitter</h2>
                 <p className="bg-blue-500 text-white p-3 text-center hover:bg-blue-800 transition-all duration-500">Know More</p>
-            </div>
+            </div> */}
             {/* the card */}
             {/* YOUTUBE */}
             <div className="flex flex-col w-[45%] lg:w-[80%]  aspect-video bg-white rounded-lg shadow-md m-6 overflow-hidden sm:w-52">
@@ -66,7 +67,6 @@ function VideoPanel() {
                 <p className="bg-blue-500 text-white p-3 text-center hover:bg-blue-800 transition-all duration-500">Know More</p>
             </div>
             {/* the card */}
-
             {/* the card */}
             {/* TIKTOK */}
             <div className="flex flex-col w-[45%] lg:w-[80%]  bg-white rounded-lg shadow-md m-6 overflow-hidden sm:w-52">
@@ -74,7 +74,6 @@ function VideoPanel() {
                 <h2 className="text-center px-2 pb-5">Display YT</h2>
                 <p className="bg-blue-500 text-white p-3 text-center hover:bg-blue-800 transition-all duration-500">Know More</p>
             </div>
-
             {/* the card */}
             {/* Reddit */}
             <div className="flex flex-col w-[45%] lg:w-[80%]  bg-white rounded-lg shadow-md m-6 overflow-hidden sm:w-52">
@@ -82,7 +81,6 @@ function VideoPanel() {
                 <h2 className="text-center px-2 pb-5">Display Reddit</h2>
                 <p className="bg-blue-500 text-white p-3 text-center hover:bg-blue-800 transition-all duration-500">Know More</p>
             </div>
-
             {/* the card */}
             {/* Bilibili */}
             <div className="flex flex-col w-[45%] lg:w-[80%]  bg-white rounded-lg shadow-md m-6 overflow-hidden sm:w-52">
