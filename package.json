@@ -16,7 +16,6 @@
         "luxon": "^3.1.1",
         "react": "^18.2.0",
         "react-bilibili-embed-renderer": "^1.2.1",
-        "react-bilibili-video": "^1.0.0",
         "react-dom": "^18.2.0",
         "react-icons": "^4.6.0",
         "react-lite-youtube-embed": "^2.3.52",
