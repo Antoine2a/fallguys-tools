@@ -1,6 +1,4 @@
 import React from 'react';
-import { TwitterVideoEmbed } from 'react-twitter-embed';
-import LiteYouTubeEmbed from 'react-lite-youtube-embed';
 
 import VideoPanel from '../components/speedrun/VideoPanel';
 
@@ -13,15 +11,8 @@ function Speedrun() {
                     WIP - UNDER PROGRESS - PRIORITY: <strong>1</strong> (1 higher priority, 10 minor priority)
                 </h2>
             </div>
-            {/* <LiteYouTubeEmbed id="HaEPXoXVf2k" title="wr big fans" /> */}
 
             <div className="flex flex-row mt-10 w-[90%] md:w-full bg-red-500">
-                {/* <div className="relative">
-                    <div className="absolute top-0 left-0">
-                        <TwitterVideoEmbed id="1593905159855382528" />
-                    </div>
-                </div> */}
-
                 <VideoPanel />
             </div>
         </div>
