@@ -4,7 +4,11 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        fallGuys: ["Titan One", "sans-serif"]
+      }
+    },
     screens: {
       'xl': { "max": "1200px" },
       "lg": { "max": "991px" },
