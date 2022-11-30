@@ -7,7 +7,7 @@ import { Footer, Navbar } from './components';
 export function App() {
     return (
         <div className="flex flex-col h-screen">
-            {/* <Navbar /> */}
+            <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/speedrun" element={<Speedrun />} />
