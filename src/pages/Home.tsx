@@ -22,7 +22,7 @@ function Home() {
     const { title, subtitle, text, btn1, btn2, img } = homeData;
 
     return (
-        <div className="flex flex-col bg-gradient-to-b from-emerald-200 to-white h-auto w-auto">
+        <div className="flex flex-colh-auto w-auto bg-pattern-home bg-auto bg-repeat">
             <div className={StyleUtils.classNames('grid items-start justify-items-center', classes.navContainer)}>
                 <div className="grid items-center justify-items-center mt-36 mb-16 md:mt-28 md:mb-12">
                     <h1 className="text-7xl font-bold lg:text-6xl md:text-5xl sm:text-4xl xsm:text-3xl text-black filter drop-shadow-lg">{title}</h1>

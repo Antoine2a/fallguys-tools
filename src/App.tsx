@@ -1,7 +1,7 @@
 import { Routes, Route, HashRouter } from 'react-router-dom';
 
 // Pages
-import { Challenges, Home, MapCreator, NotFound, Speedrun, Strategy, TmpPage, Tournaments } from './pages';
+import { Challenges, Home, Factory, NotFound, Speedrun, Strategy, TmpPage, Tournaments } from './pages';
 import { Footer, Navbar } from './components';
 
 export function App() {
@@ -11,7 +11,7 @@ export function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/speedrun" element={<Speedrun />} />
-                <Route path="/map-creator" element={<MapCreator />} />
+                <Route path="/factory" element={<Factory />} />
                 <Route path="/strategy" element={<Strategy />} />
                 <Route path="/tournaments" element={<Tournaments />} />
                 <Route path="/challenges" element={<Challenges />} /> {/* or maybe "Achievements" */}

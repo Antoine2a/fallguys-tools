@@ -29,12 +29,7 @@ const footerData: Tfooter = {
     links: [
         {
             id: 'foot_links_1',
-            content: [
-                { id: 'link_content_1', link: 'About Me' },
-                { id: 'link_content_2', link: 'Features' },
-                { id: 'link_content_3', link: 'News' },
-                { id: 'link_content_4', link: 'Menu' },
-            ],
+            content: [{ id: 'link_content_1', link: 'About Me' }],
         },
         {
             id: 'foot_links_2',
@@ -43,11 +38,11 @@ const footerData: Tfooter = {
         {
             id: 'foot_links_3',
             content: [
-                { id: 'contact_twitter', link: 'MrPrart', icon: SiTwitter },
-                { id: 'contact_youttube', link: 'KennyShield', icon: SiYoutube },
+                // { id: 'contact_twitter', link: 'MrPrart', icon: SiTwitter },
+                // { id: 'contact_youttube', link: 'KennyShield', icon: SiYoutube },
                 { id: 'contact_discord', link: 'KennyShield#1582', icon: SiDiscord },
                 { id: 'contact_email', link: 'kennyshield.pro@gmail.com', icon: SiMaildotru },
-                { id: 'contact_twitch', link: 'KennyShield', icon: SiTwitch },
+                // { id: 'contact_twitch', link: 'KennyShield', icon: SiTwitch },
             ],
         },
     ],
