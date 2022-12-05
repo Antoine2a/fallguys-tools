@@ -1,6 +1,5 @@
 import { Routes, Route, HashRouter } from 'react-router-dom';
 
-// Pages
 import { Challenges, Home, Factory, NotFound, Speedrun, Strategy, TmpPage, Tournaments } from './pages';
 import { Footer, Navbar } from './components';
 
@@ -18,7 +17,9 @@ export function App() {
                 <Route path="/tmp-page" element={<TmpPage />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
-            <Footer />
+            <div>
+                <Footer />
+            </div>
         </div>
     );
 }
@@ -26,7 +27,7 @@ export function App() {
 export function WrappedApp() {
     return (
         <HashRouter>
-            {/* //TODO use BrowserRouter since not using github-pages anymore */}
+            {/* //TODO use BrowserRouter when not using github-pages anymore */}
             <App />
         </HashRouter>
     );

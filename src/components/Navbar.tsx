@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
+
 import { version as appVersion } from '../../package.json';
 import { StyleUtils } from '../utils';
 
@@ -11,6 +12,12 @@ const classes: StyleUtils.TcssClasses = {
 
 function Navbar() {
     const [navState, setNavState] = useState(false);
+
+    const [expanded, setExpanded] = useState(false);
+
+    const toggleExpanded = () => {
+        setExpanded(!expanded);
+    };
 
     const onNavScroll = () => {
         if (window.scrollY > 180) {
@@ -35,7 +42,7 @@ function Navbar() {
                     <h1 className="font-fallGuys md:invisible">Fall Guys Tools ⚠️ v{appVersion}</h1>
                     <h1 className="font-fallGuys invisible md:visible">FGT ⚠️ v{appVersion}</h1>
                 </NavLink>
-                <ul className="flex items-center gap-7">
+                <ul className="flex items-center gap-7 md:invisible">
                     <li>
                         <NavLink to="/speedrun" className="text-lg text-slate-900">
                             Speedrun

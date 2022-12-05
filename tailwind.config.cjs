@@ -2,11 +2,12 @@
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
+    'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'
   ],
   theme: {
     extend: {
       fontFamily: {
-        fallGuys: ["Titan One", "sans-serif"]
+        'fallGuys': ["Titan One", "sans-serif"]
       },
       colors: {
         'fg-pink': '#F75BB1',
@@ -23,19 +24,26 @@ module.exports = {
         'border-black': '1px 0 black, -1px 0 black, 0 1px black, 0 -1px black, 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;'
       },
       backdropBlur: {
-        xs: '2px',
-        xxs: '1px',
+        'xs': '2px',
+        'xxs': '1px',
       }
     },
     screens: {
-      'xl': { "max": "1200px" },
-      "lg": { "max": "991px" },
-      "md": { "max": "767px" },
-      "sm": { "max": "550px" },
-      "xsm": { "max": "425px" },
+      'xsm': "425px",
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+
+      'tablet': '640px',
+      'laptop': '1024px',
+      'desktop': '1280px',
     }
   },
   plugins: [
-    require('tailwindcss-textshadow')
+    require('tailwindcss-textshadow'),
+    require('flowbite/plugin')
   ],
+
 }
