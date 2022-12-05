@@ -17,9 +17,7 @@ export function App() {
                 <Route path="/tmp-page" element={<TmpPage />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
-            <div>
-                <Footer />
-            </div>
+            <Footer />
         </div>
     );
 }

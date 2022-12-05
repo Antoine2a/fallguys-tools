@@ -1,81 +1,39 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import { version as appVersion } from '../../package.json';
-import { StyleUtils } from '../utils';
-
-const classes: StyleUtils.TcssClasses = {
-    navDefault: 'flex items-center justify-center fixed top-08 lg:top-0 left-0 right-0 transition-all duration-300 bg-fg-pink h-[9vh] z-[100]',
-    navSticky: 'bg-white/80 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-50 flex items-center fixed top-0 left-0 right-0 opacity-100  shadow-sm shadow-slate-100',
-    navContainer: ' w-[85vw] xl:w-[95vw] m-auto',
-};
+import { Navbar as FlowNavbar, Dropdown, Avatar } from 'flowbite-react';
 
 function Navbar() {
-    const [navState, setNavState] = useState(false);
-
-    const [expanded, setExpanded] = useState(false);
-
-    const toggleExpanded = () => {
-        setExpanded(!expanded);
-    };
-
-    const onNavScroll = () => {
-        if (window.scrollY > 180) {
-            setNavState(true);
-        } else {
-            setNavState(false);
-        }
-    };
-
-    useEffect(() => {
-        window.addEventListener('scroll', onNavScroll);
-
-        return () => {
-            window.removeEventListener('scroll', onNavScroll);
-        };
-    }, []);
-
     return (
-        <header className={`${classes.navDefault} ${navState && classes.navSticky}`}>
-            <nav className={StyleUtils.classNames('flex items-center justify-between', classes.navContainer)}>
-                <NavLink to="/" className="flex items-center">
-                    <h1 className="font-fallGuys md:invisible">Fall Guys Tools ⚠️ v{appVersion}</h1>
-                    <h1 className="font-fallGuys invisible md:visible">FGT ⚠️ v{appVersion}</h1>
-                </NavLink>
-                <ul className="flex items-center gap-7 md:invisible">
-                    <li>
-                        <NavLink to="/speedrun" className="text-lg text-slate-900">
-                            Speedrun
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/factory" className="text-lg text-slate-900">
-                            Factory
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/strategy" className="text-lg text-slate-900">
-                            Strategy
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/tournaments" className="text-lg text-slate-900">
-                            Tournaments
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/challenges" className="text-lg text-slate-900">
-                            Challenges
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/tmp-page" className="text-lg text-slate-900">
-                            TmpTab
-                        </NavLink>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+        <FlowNavbar fluid rounded>
+            <FlowNavbar.Brand href="/">
+                <span className="self-center whitespace-nowrap text-xl dark:text-white font-fallGuys hidden md:inline">Fall Guys Tools</span>
+                <span className="self-center whitespace-nowrap text-xl dark:text-white font-fallGuys md:hidden">FGT</span>
+            </FlowNavbar.Brand>
+            <div className="flex md:order-2">
+                {/* <Dropdown arrowIcon={false} inline label={<Avatar alt="User settings" img="https://flowbite.com/docs/images/people/profile-picture-5.jpg" rounded />}>
+                    <Dropdown.Header>
+                        <span className="block text-sm">Bonnie Green</span>
+                        <span className="block truncate text-sm font-medium">name@flowbite.com</span>
+                    </Dropdown.Header>
+                    <Dropdown.Item>Dashboard</Dropdown.Item>
+                    <Dropdown.Item>Settings</Dropdown.Item>
+                    <Dropdown.Item>Earnings</Dropdown.Item>
+                    <Dropdown.Divider />
+                    <Dropdown.Item>Sign out</Dropdown.Item>
+                </Dropdown> */}
+                <FlowNavbar.Toggle />
+            </div>
+            <FlowNavbar.Collapse>
+                <FlowNavbar.Link href="/#/speedrun" active>
+                    Speedrun
+                </FlowNavbar.Link>
+                <FlowNavbar.Link href="/#/factory">factory</FlowNavbar.Link>
+                <FlowNavbar.Link href="/#/strategy">strategy</FlowNavbar.Link>
+                <FlowNavbar.Link href="/#/challenges">challenges</FlowNavbar.Link>
+                <FlowNavbar.Link href="/#/tmp-page">tmp-page</FlowNavbar.Link>
+            </FlowNavbar.Collapse>
+        </FlowNavbar>
     );
 }
 
