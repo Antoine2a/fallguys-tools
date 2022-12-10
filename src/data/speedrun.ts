@@ -21,7 +21,7 @@ enum NbPlayerCategoryEnum { // could rename the enum, not fan of this; not fan o
     Squad,
 }
 enum SpeedrunCategoryEnum {
-    AnyPercent, // just finish the map the fatest way you can 
+    AnyPercent, // just finish the map the fatest way you can
     Glitchless, // glitchs allowed
     OutDated, // mecanics of the game/maps have changed,
     PointsScored,
@@ -410,44 +410,45 @@ const finals: Tround[] = [
         levelName: 'Fall Mountain',
         levelType: LevelTypeEnum.Final,
         season: 1,
-        speedrun: [{
-            variantMap: 'default',
-            speedrunDetails: [
-                {
-                    category: SpeedrunCategoryEnum.AnyPercent,
-                    recordType: RecordTypeEnum.TimeBased,
-                    records: [
-                        {
-                            nationalityType: NationalityCategoryEnum.WR,
-                            nametags: 'Bingus',
-                            recordTypeValue: Duration.fromObject({ seconds: 28, milliseconds: 40 }),
-                            url: 'https://youtu.be/vwRmGmhhVa0',
-                            mediaType: MediaEnum.Youtube,
-                        },
-                    ],
-                },
-            ],
-        },
-        {
-            variantMap: 'Warped',
-            speedrunDetails: [
-                {
-                    category: SpeedrunCategoryEnum.AnyPercent,
-                    recordType: RecordTypeEnum.TimeBased,
-                    records: [
-                        {
-                            nationalityType: NationalityCategoryEnum.WR,
-                            nametags: 'Poloars65',
-                            recordTypeValue: Duration.fromObject({ seconds: 29, milliseconds: 58 }),
-                            url: 'https://clips.twitch.tv/NurturingBluePidgeonWow-wpIUJHE_Fw6gri3B',
-                            mediaType: MediaEnum.Twitch,
-                        },
-                    ],
-                },
-            ],
-        }
-
+        speedrun: [
+            {
+                variantMap: 'default',
+                speedrunDetails: [
+                    {
+                        category: SpeedrunCategoryEnum.AnyPercent,
+                        recordType: RecordTypeEnum.TimeBased,
+                        records: [
+                            {
+                                nationalityType: NationalityCategoryEnum.WR,
+                                nametags: 'Bingus',
+                                recordTypeValue: Duration.fromObject({ seconds: 28, milliseconds: 40 }),
+                                url: 'https://youtu.be/vwRmGmhhVa0',
+                                mediaType: MediaEnum.Youtube,
+                            },
+                        ],
+                    },
+                ],
+            },
+            {
+                variantMap: 'Warped',
+                speedrunDetails: [
+                    {
+                        category: SpeedrunCategoryEnum.AnyPercent,
+                        recordType: RecordTypeEnum.TimeBased,
+                        records: [
+                            {
+                                nationalityType: NationalityCategoryEnum.WR,
+                                nametags: 'Poloars65',
+                                recordTypeValue: Duration.fromObject({ seconds: 29, milliseconds: 58 }),
+                                url: 'https://clips.twitch.tv/NurturingBluePidgeonWow-wpIUJHE_Fw6gri3B',
+                                mediaType: MediaEnum.Twitch,
+                            },
+                        ],
+                    },
+                ],
+            },
         ],
+    },
 ];
 
 const invisibeans: Tround[] = []; // no records in this category
